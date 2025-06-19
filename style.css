@@ -1,92 +1,66 @@
-* {
+body {
+    background-color: #ffe6f0; /* Rosa clarinho no fundo */
+    color: #4d004d; /* Texto num tom de rosa escuro / roxo */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 header {
-    background-color: #4e4bff;
-    color: #fff;
+    background-color: #ff99cc; /* Rosa médio no topo */
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
 }
 
-header nav ul {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    list-style: none;
-    margin-top: 10px;
+    gap: 15px;
 }
 
-header nav a {
-    color: white;
+nav a {
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
-header nav a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-.inicio {
-    text-align: center;
-    padding: 50px 0;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.inicio .foto {
-    width: 200px;
-    border-radius: 100%;
-    border: 5px solid #4e4bff;
-    margin-bottom: 20px;
-}
-
-.inicio h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.sobre, .projetos, .contato {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.sobre h2, .projetos h2, .contato h2 {
-    color: #4e4bff;
-    margin-bottom: 20px;
+.inicio h2,
+.sobre h2,
+.projetos h2,
+.contato h2 {
+    color: #cc0066;
 }
 
 footer {
-    background-color: #4e4bff;
-    color: white;
+    background-color: #ff99cc;
+    color: #ffffff;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
+    margin-top: 30px;
 }
 
-a {
-    color: #4e4bff;
-}
-
-a:hover {
-    text-decoration: underline;
+.foto {
+    width: 200px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
