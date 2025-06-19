@@ -19,6 +19,15 @@ header h1::after {
     margin-left: 8px;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 nav a {
     color: #fff;
     font-weight: bold;
@@ -32,31 +41,30 @@ nav a:hover {
     background-color: #b974a1;
 }
 
-.foto {
-    width: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px auto;
-    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
-    transition: transform 0.5s ease;
-    cursor: pointer;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;  /* Centraliza todo o conteúdo dentro da container */
 }
 
-.foto:hover {
-    transform: rotate(10deg) scale(1.1);
+.inicio h2,
+.sobre h2,
+.projetos h2,
+.contato h2 {
+    color: #cc0066;
 }
 
-h2 {
-    text-align: center;
+section h2 {
     position: relative;
 }
 
-h2::before {
+section h2::before {
     content: "🐱 ";
     margin-right: 5px;
 }
 
-h2::after {
+section h2::after {
     content: " 🐱";
     margin-left: 5px;
 }
@@ -67,4 +75,26 @@ section {
     padding: 20px;
     margin-bottom: 40px;
     box-shadow: 0 0 15px rgba(192, 149, 199, 0.3);
+}
+
+footer {
+    background-color: #d78eb5; /* rodapé rosa lilás */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.foto {
+    width: 200px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.foto:hover {
+    transform: rotate(10deg) scale(1.1);
 }
