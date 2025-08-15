@@ -5,21 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lanna Cortivo Pereira - Portfólio</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Estilo básico do alto contraste -->
-    <style>
-        .alto-contraste {
-            background-color: #000 !important;
-            color: #FFD700 !important;
-        }
-        .alto-contraste a {
-            color: #00FFFF !important;
-        }
-    </style>
 </head>
 <body>
+
     <!-- Menu de acessibilidade -->
-    <div aria-label="Menu de acessibilidade" role="region" style="padding: 10px; background: #f4f4f4;">
+    <div aria-label="Menu de acessibilidade" role="region">
         <button onclick="document.body.classList.toggle('alto-contraste')" aria-pressed="false">
             Alternar alto contraste
         </button>
@@ -42,7 +32,7 @@
 
     <section class="inicio">
         <div class="container">
-           <img src="images/minha-foto.jpg" alt="Foto de Lanna Cortivo Pereira sorrindo" class="foto" />
+            <img src="images/minha-foto.jpg" alt="Foto de Lanna Cortivo Pereira sorrindo" class="foto" />
             <h2 tabindex="0">Olá! Eu sou a Lanna 👋</h2>
             <p tabindex="0">
                 Estudante do último ano do ensino médio e cursando pré-vestibular.
@@ -92,5 +82,6 @@
             document.body.style.fontSize = "smaller";
         }
     </script>
+
 </body>
 </html>
