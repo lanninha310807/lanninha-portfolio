@@ -8,16 +8,22 @@
 </head>
 <body>
 
-    <!-- Menu de acessibilidade -->
-    <nav id="acessibilidade" aria-label="Menu de Acessibilidade">
-        <ul>
-            <li><a href="#conteudo-principal">Ir para o conteúdo</a></li>
-            <li><a href="#menu">Ir para o menu</a></li>
-            <li><button id="btn-contraste" aria-pressed="false" onclick="alterarContraste()">Alto contraste</button></li>
-            <li><button onclick="aumentarFonte()">Aumentar fonte</button></li>
-            <li><button onclick="diminuirFonte()">Diminuir fonte</button></li>
-        </ul>
-    </nav>
+    <!-- Menu de Acessibilidade -->
+    <div id="botao-acessibilidade" aria-label="Botão de Acessibilidade" aria-expanded="false" tabindex="0">
+        ⚙️
+    </div>
+
+    <ul id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+        <li>
+            <button id="alterna-contraste" aria-pressed="false">Alto contraste</button>
+        </li>
+        <li>
+            <button id="aumentar-fonte">Aumentar fonte</button>
+        </li>
+        <li>
+            <button id="diminuir-fonte">Diminuir fonte</button>
+        </li>
+    </ul>
 
     <header>
         <div class="container">
@@ -33,7 +39,7 @@
     </header>
 
     <main id="conteudo-principal">
-        <section class="inicio">
+        <section id="inicio" class="inicio">
             <div class="container">
                 <img src="images/minha-foto.jpg" alt="Foto de Lanna Cortivo Pereira sorrindo" class="foto" />
                 <h2>Olá! Eu sou a Lanna 👋</h2>
@@ -77,8 +83,9 @@
         </div>
     </footer>
 
-    <!-- Scripts de acessibilidade -->
-    <script src="acessibilidade.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
