@@ -1,24 +1,32 @@
-# lanninha-portfolio
-# Portfólio - Lanna Cortivo Pereira 🐱
+# 🌟 Portfólio - Lanna Cortivo Pereira 🐱
 
-Meu portfólio pessoal, criado para apresentar quem sou, meus interesses e meus projetos.
+Meu portfólio pessoal, criado para apresentar quem sou, meus interesses e meus projetos.  
+Com foco em **design limpo**, **acessibilidade** e **experiência do usuário**.
+
+---
 
 ## 🎯 Objetivo
 Ter um espaço online para mostrar minhas habilidades, experiências e facilitar o contato com quem quiser conhecer meu trabalho.
 
+---
+
 ## ♿ Recursos de Acessibilidade
-- Uso de **atributos `aria`** para melhor navegação com leitores de tela.
+Este site foi desenvolvido com recursos para tornar a navegação mais inclusiva:
+- Uso de **atributos `aria`** para melhor leitura em softwares de apoio.
 - **Textos alternativos (`alt`)** em todas as imagens.
-- **`tabindex`** para permitir navegação por teclado.
+- **`tabindex`** para navegação por teclado.
 - **Menu de acessibilidade** com:
-  - Alternância de **alto contraste**
-  - **Aumento** e **diminuição** de fonte
+  - Alternância de **alto contraste**.
+  - **Aumento** e **diminuição** do tamanho da fonte.
 - Cores com **bom contraste** para facilitar a leitura.
 
-## 🛠️ Tecnologias Utilizadas
-- HTML5
-- CSS3
-- JavaScript
+---
 
-## 📬 Contato
-- **E-mail:** [lanna.pereir4@gmail.com](mailto:lanna.pereir4@gmail.com)
+## 🛠️ Tecnologias Utilizadas
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+
+---
+
+## 📂 Estrutura do Projeto
