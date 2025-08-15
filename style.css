@@ -1,3 +1,6 @@
+/* --------------------------
+   Estilo geral
+--------------------------- */
 body {
     background-color: #fff0f5; /* rosa bem clarinho */
     color: #4b2e83; /* roxo suave */
@@ -6,6 +9,16 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* --------------------------
+   Cabeçalho
+--------------------------- */
 header {
     background-color: #d78eb5; /* rosa lilás */
     padding: 20px 0;
@@ -41,13 +54,9 @@ nav a:hover {
     background-color: #b974a1;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;  /* Centraliza todo o conteúdo dentro da container */
-}
-
+/* --------------------------
+   Seções
+--------------------------- */
 .inicio h2,
 .sobre h2,
 .projetos h2,
@@ -77,6 +86,9 @@ section {
     box-shadow: 0 0 15px rgba(192, 149, 199, 0.3);
 }
 
+/* --------------------------
+   Rodapé
+--------------------------- */
 footer {
     background-color: #d78eb5; /* rodapé rosa lilás */
     color: #ffffff;
@@ -85,9 +97,12 @@ footer {
     margin-top: 30px;
 }
 
+/* --------------------------
+   Foto de perfil
+--------------------------- */
 .foto {
     width: 200px;
-    border-radius: 50%; /* Deixa a foto redonda */
+    border-radius: 50%;
     display: block;
     margin: 0 auto 20px auto;
     box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
@@ -97,4 +112,67 @@ footer {
 
 .foto:hover {
     transform: rotate(10deg) scale(1.1);
+}
+
+/* --------------------------
+   Menu de Acessibilidade
+--------------------------- */
+[aria-label="Menu de acessibilidade"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f8d7e3;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid #b974a1;
+    z-index: 1000;
+}
+
+[aria-label="Menu de acessibilidade"] button {
+    background: #d78eb5;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+[aria-label="Menu de acessibilidade"] button:hover {
+    background: #b974a1;
+}
+
+/* --------------------------
+   Alto Contraste
+--------------------------- */
+.alto-contraste {
+    background-color: #000 !important;
+    color: #FFD700 !important;
+}
+
+.alto-contraste a {
+    color: #00FFFF !important;
+}
+
+.alto-contraste header {
+    background: #222 !important;
+    color: #FFD700 !important;
+}
+
+.alto-contraste footer {
+    background: #000 !important;
+    color: #FFD700 !important;
+}
+
+.alto-contraste [aria-label="Menu de acessibilidade"] {
+    background: #222 !important;
+    border-bottom-color: #FFD700 !important;
+}
+
+.alto-contraste [aria-label="Menu de acessibilidade"] button {
+    background: #FFD700 !important;
+    color: #000 !important;
 }
