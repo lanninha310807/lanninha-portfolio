@@ -2,12 +2,12 @@
    Estilo geral
 --------------------------- */
 body {
-    background-color: #fff0f5; /* rosa bem clarinho */
-    color: #4b2e83; /* roxo suave */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* fonte divertida */
+    background-color: #fff0f5;
+    color: #4b2e83;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 .container {
@@ -21,13 +21,13 @@ body {
    Cabeçalho
 --------------------------- */
 header {
-    background-color: #d78eb5; /* rosa lilás */
+    background-color: #d78eb5;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1::after {
-    content: " 🐾"; /* patinha depois do título */
+    content: " 🐾";
     font-size: 1.5rem;
     margin-left: 8px;
 }
@@ -62,10 +62,6 @@ nav a:hover {
 .projetos h2,
 .contato h2 {
     color: #cc0066;
-}
-
-section h2 {
-    position: relative;
 }
 
 section h2::before {
@@ -117,28 +113,44 @@ footer {
 /* --------------------------
    Menu de Acessibilidade
 --------------------------- */
-#acessibilidade {
+#botao-acessibilidade {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
+    background: #d78eb5;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1001;
+}
+
+#botao-acessibilidade.rotacao-botao {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.opcoes-acessibilidade {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 10px;
     background: #f8d7e3;
-    padding: 8px;
-    border-bottom: 2px solid #b974a1;
-    z-index: 1000;
-    width: 100%;
-}
-
-#acessibilidade ul {
+    padding: 10px;
+    border-radius: 8px;
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
+    z-index: 1000;
 }
 
-#acessibilidade a,
-#acessibilidade button {
+.opcoes-acessibilidade.apresenta-lista {
+    display: block;
+}
+
+.opcoes-acessibilidade button {
     background: #d78eb5;
     color: white;
     border: none;
@@ -146,13 +158,12 @@ footer {
     border-radius: 8px;
     font-size: 0.9rem;
     cursor: pointer;
+    margin-bottom: 5px;
     transition: background 0.3s ease;
-    text-decoration: none;
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-#acessibilidade a:hover,
-#acessibilidade button:hover {
+.opcoes-acessibilidade button:hover {
     background: #b974a1;
 }
 
@@ -176,15 +187,4 @@ footer {
 .alto-contraste footer {
     background: #000 !important;
     color: #FFD700 !important;
-}
-
-.alto-contraste #acessibilidade {
-    background: #222 !important;
-    border-bottom-color: #FFD700 !important;
-}
-
-.alto-contraste #acessibilidade a,
-.alto-contraste #acessibilidade button {
-    background: #FFD700 !important;
-    color: #000 !important;
 }
