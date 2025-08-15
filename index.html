@@ -9,79 +9,76 @@
 <body>
 
     <!-- Menu de acessibilidade -->
-    <div aria-label="Menu de acessibilidade" role="region">
-        <button onclick="document.body.classList.toggle('alto-contraste')" aria-pressed="false">
-            Alternar alto contraste
-        </button>
-        <button onclick="aumentarFonte()" aria-pressed="false">Aumentar fonte</button>
-        <button onclick="diminuirFonte()" aria-pressed="false">Diminuir fonte</button>
-    </div>
+    <nav id="acessibilidade" aria-label="Menu de Acessibilidade">
+        <ul>
+            <li><a href="#conteudo-principal">Ir para o conteúdo</a></li>
+            <li><a href="#menu">Ir para o menu</a></li>
+            <li><button id="btn-contraste" aria-pressed="false" onclick="alterarContraste()">Alto contraste</button></li>
+            <li><button onclick="aumentarFonte()">Aumentar fonte</button></li>
+            <li><button onclick="diminuirFonte()">Diminuir fonte</button></li>
+        </ul>
+    </nav>
 
     <header>
         <div class="container">
             <h1 tabindex="0">Lanna Cortivo Pereira</h1>
-            <nav aria-label="Menu principal">
+            <nav id="menu" aria-label="Menu principal">
                 <ul>
-                    <li><a href="#sobre" tabindex="0">Sobre</a></li>
-                    <li><a href="#projetos" tabindex="0">Projetos</a></li>
-                    <li><a href="#contato" tabindex="0">Contato</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="inicio">
-        <div class="container">
-            <img src="images/minha-foto.jpg" alt="Foto de Lanna Cortivo Pereira sorrindo" class="foto" />
-            <h2 tabindex="0">Olá! Eu sou a Lanna 👋</h2>
-            <p tabindex="0">
-                Estudante do último ano do ensino médio e cursando pré-vestibular.
-                Apaixonada por tecnologia, aprender idiomas e explorar culturas diferentes.
-            </p>
-        </div>
-    </section>
+    <main id="conteudo-principal">
+        <section class="inicio">
+            <div class="container">
+                <img src="images/minha-foto.jpg" alt="Foto de Lanna Cortivo Pereira sorrindo" class="foto" />
+                <h2>Olá! Eu sou a Lanna 👋</h2>
+                <p>
+                    Estudante do último ano do ensino médio e cursando pré-vestibular.
+                    Apaixonada por tecnologia, aprender idiomas e explorar culturas diferentes.
+                </p>
+            </div>
+        </section>
 
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <h2 tabindex="0">Sobre mim</h2>
-            <p tabindex="0">
-                Sou uma pessoa curiosa, com aprendizado rápido, apaixonada por descobrir novas culturas,
-                aprender idiomas e entender como as coisas funcionam. Estou começando minha jornada no mundo
-                da tecnologia e sempre buscando aprender mais.
-            </p>
-        </div>
-    </section>
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <p>
+                    Sou uma pessoa curiosa, com aprendizado rápido, apaixonada por descobrir novas culturas,
+                    aprender idiomas e entender como as coisas funcionam. Estou começando minha jornada no mundo
+                    da tecnologia e sempre buscando aprender mais.
+                </p>
+            </div>
+        </section>
 
-    <section id="projetos" class="projetos">
-        <div class="container">
-            <h2 tabindex="0">Projetos</h2>
-            <p tabindex="0">Em breve você verá alguns projetos meus aqui! 🚀</p>
-        </div>
-    </section>
+        <section id="projetos" class="projetos">
+            <div class="container">
+                <h2>Projetos</h2>
+                <p>Em breve você verá alguns projetos meus aqui! 🚀</p>
+            </div>
+        </section>
 
-    <section id="contato" class="contato">
-        <div class="container">
-            <h2 tabindex="0">Contato</h2>
-            <p tabindex="0">Entre em contato comigo pelo email:</p>
-            <p><a href="mailto:lanna.pereir4@gmail.com">lanna.pereir4@gmail.com</a></p>
-        </div>
-    </section>
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Entre em contato comigo pelo email:</p>
+                <p><a href="mailto:lanna.pereir4@gmail.com">lanna.pereir4@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p tabindex="0">© 2025 Lanna Cortivo Pereira | Feito com ♥</p>
+            <p>© 2025 Lanna Cortivo Pereira | Feito com ♥</p>
         </div>
     </footer>
 
     <!-- Scripts de acessibilidade -->
-    <script>
-        function aumentarFonte() {
-            document.body.style.fontSize = "larger";
-        }
-        function diminuirFonte() {
-            document.body.style.fontSize = "smaller";
-        }
-    </script>
+    <script src="acessibilidade.js"></script>
 
 </body>
 </html>
