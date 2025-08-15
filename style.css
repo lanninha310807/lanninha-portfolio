@@ -1,6 +1,3 @@
-/* --------------------------
-   Estilo geral
---------------------------- */
 body {
     background-color: #fff0f5;
     color: #4b2e83;
@@ -17,9 +14,6 @@ body {
     text-align: center;
 }
 
-/* --------------------------
-   Cabeçalho
---------------------------- */
 header {
     background-color: #d78eb5;
     padding: 20px 0;
@@ -54,9 +48,6 @@ nav a:hover {
     background-color: #b974a1;
 }
 
-/* --------------------------
-   Seções
---------------------------- */
 .inicio h2,
 .sobre h2,
 .projetos h2,
@@ -82,9 +73,6 @@ section {
     box-shadow: 0 0 15px rgba(192, 149, 199, 0.3);
 }
 
-/* --------------------------
-   Rodapé
---------------------------- */
 footer {
     background-color: #d78eb5;
     color: #ffffff;
@@ -93,9 +81,6 @@ footer {
     margin-top: 30px;
 }
 
-/* --------------------------
-   Foto de perfil
---------------------------- */
 .foto {
     width: 200px;
     border-radius: 50%;
@@ -110,9 +95,6 @@ footer {
     transform: rotate(10deg) scale(1.1);
 }
 
-/* --------------------------
-   Menu de Acessibilidade
---------------------------- */
 #botao-acessibilidade {
     position: fixed;
     top: 10px;
@@ -167,9 +149,6 @@ footer {
     background: #b974a1;
 }
 
-/* --------------------------
-   Alto Contraste
---------------------------- */
 .alto-contraste {
     background-color: #000 !important;
     color: #FFD700 !important;
