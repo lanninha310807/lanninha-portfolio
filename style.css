@@ -7,6 +7,7 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif; /* fonte divertida */
     margin: 0;
     padding: 0;
+    font-size: 100%;
 }
 
 .container {
@@ -23,7 +24,6 @@ header {
     background-color: #d78eb5; /* rosa lilás */
     padding: 20px 0;
     text-align: center;
-    position: relative;
 }
 
 header h1::after {
@@ -90,7 +90,7 @@ section {
    Rodapé
 --------------------------- */
 footer {
-    background-color: #d78eb5; /* rodapé rosa lilás */
+    background-color: #d78eb5;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -117,31 +117,42 @@ footer {
 /* --------------------------
    Menu de Acessibilidade
 --------------------------- */
-[aria-label="Menu de acessibilidade"] {
+#acessibilidade {
     position: fixed;
     top: 0;
     left: 0;
     background: #f8d7e3;
-    padding: 10px;
-    display: flex;
-    gap: 8px;
+    padding: 8px;
     border-bottom: 2px solid #b974a1;
     z-index: 1000;
+    width: 100%;
 }
 
-[aria-label="Menu de acessibilidade"] button {
+#acessibilidade ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#acessibilidade a,
+#acessibilidade button {
     background: #d78eb5;
     color: white;
     border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 12px;
+    padding: 6px 10px;
+    border-radius: 8px;
     font-size: 0.9rem;
+    cursor: pointer;
     transition: background 0.3s ease;
+    text-decoration: none;
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-[aria-label="Menu de acessibilidade"] button:hover {
+#acessibilidade a:hover,
+#acessibilidade button:hover {
     background: #b974a1;
 }
 
@@ -167,12 +178,13 @@ footer {
     color: #FFD700 !important;
 }
 
-.alto-contraste [aria-label="Menu de acessibilidade"] {
+.alto-contraste #acessibilidade {
     background: #222 !important;
     border-bottom-color: #FFD700 !important;
 }
 
-.alto-contraste [aria-label="Menu de acessibilidade"] button {
+.alto-contraste #acessibilidade a,
+.alto-contraste #acessibilidade button {
     background: #FFD700 !important;
     color: #000 !important;
 }
