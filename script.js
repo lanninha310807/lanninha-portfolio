@@ -1,7 +1,5 @@
-// Espera o conteúdo carregar antes de rodar
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ===== BOTÃO DE ACESSIBILIDADE =====
     const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
     const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 
@@ -13,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
         botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado);
     });
 
-    // ===== AUMENTAR E DIMINUIR FONTE =====
     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
     const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+    const alternaContraste = document.getElementById('alterna-contraste');
 
     let tamanhoAtualFonte = 1;
 
@@ -29,16 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
     });
 
-    // ===== ALTO CONTRASTE =====
-    const alternaContraste = document.getElementById('alterna-contraste');
-
     alternaContraste.addEventListener('click', function() {
         document.body.classList.toggle('alto-contraste');
     });
 
 });
 
-// ===== ANIMAÇÕES COM SCROLLREVEAL =====
+// ScrollReveal
 ScrollReveal().reveal('#inicio', { delay: 500 });
 ScrollReveal().reveal('#sobre', { delay: 500 });
 ScrollReveal().reveal('#projetos', { delay: 500 });
